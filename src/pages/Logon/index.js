@@ -31,7 +31,7 @@ export default function Logon(){
     <div className="logon-container">
       <section className="form">
           <form onSubmit={handleLogin}>
-            <h1>PetStock</h1>
+            <h1>TechStock</h1>
             <h2>Login</h2>
             <input 
               placeholder="Seu Email"
