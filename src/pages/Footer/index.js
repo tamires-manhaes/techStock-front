@@ -13,25 +13,25 @@ export default function Footer(){
       <div className="footer-content">
 
         <div className="footer-group links">
-          <a className="button" href="https://github.com/tamires-manhaes">
+          <a className="button" href="https://github.com/tamires-manhaes" target="_blank">
             <button type="button">
                 <AiFillGithub size={18} color="#e02041"/>
             </button>
           </a>
 
-          <a className="button" href="https://tamires-manhaes.github.io">
+          <a className="button" href="https://tamires-manhaes.github.io" target="_blank">
             <button type="button">
                 <FiGlobe size={18} color="#e02041"/>
             </button>
           </a>
 
-          <a className="button" href="mailto:tamiresmanhaes4@gmail.com">
+          <a className="button" href="mailto:tamiresmanhaes4@gmail.com" target="_blank">
             <button type="button">
                 <AiOutlineMail size={18} color="#e02041"/>
             </button>
           </a>
 
-          <a className="button" href="https://www.linkedin.com/in/tamires-manhaes/">
+          <a className="button" href="https://www.linkedin.com/in/tamires-manhaes/" target="_blank">
             <button type="button">
                 <AiFillLinkedin size={18} color="#e02041"/>
             </button>
