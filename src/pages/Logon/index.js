@@ -16,14 +16,11 @@ export default function Logon(){
 
     try{
       const response = await api.post('sessions', { email, password });
-      
-      localStorage.setItem('useremail', response.data.email);
-      localStorage.setItem('username', response.data.name);
 
       history.push('/products');
         
     }catch (err){
-      alert('falha no login, tente novamente');
+      alert('email ou senha incorretos, verifique e tente novamente');
     }
   }
 
