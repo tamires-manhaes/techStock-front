@@ -52,7 +52,7 @@
 .content .product-list .product-item {
   width: calc(100% - 20px);
   min-width: 280px;
-  height: 400px;
+  height: 340px;
   box-sizing: border-box;
   position: relative;
   display: flex;
@@ -70,13 +70,13 @@
 
 .content .product-list .product-item button {
   position: absolute;
-  right: 15px;
-  bottom: 15px;
+  right: 10px;
+  bottom: 10px;
 }
 
 .content .product-list .product-item .description-group {
   color: rgb(83,83,83);
-  margin: 5px 0;
+  margin: 0 0 5px;
 }
 
 .content .product-list .product-item .description-group:last-child{
