@@ -40,7 +40,8 @@ export default function Footer(){
         </div>
 
         <div className="footer-group infos">
-          <span>Copyrights © {year} All Rights Reserved by <strong>Tamires Manhães</strong></span>
+          <span>Copyrights © {year}</span> 
+          <span>All Rights Reserved by <strong>Tamires Manhães</strong></span>
         </div>
       </div>
     </footer>
