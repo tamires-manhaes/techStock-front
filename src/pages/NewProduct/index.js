@@ -118,10 +118,9 @@ export default function NewProduct(){
             <button className="button" type="submit">Cadastrar</button>
           </form>
         </div>
-
+        
+        <Footer />
       </div>
-
-      <Footer />
     </main>
   )
 }
