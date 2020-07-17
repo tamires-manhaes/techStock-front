@@ -140,7 +140,7 @@
 }
 
 
-@media (min-width: 767){
+@media (min-width: 767px){
   .content .product-list .product-item{
     width: calc(100% / 4 - 40px);
     max-width: 280px;
