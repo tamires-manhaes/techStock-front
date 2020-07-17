@@ -1,0 +1,22 @@
+footer {
+  margin: 20px auto;
+}
+
+footer .footer-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .footer-content .links a button {
+  margin: 10px 0;
+  background: #fafafa;
+}
+
+footer .footer-content .infos {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

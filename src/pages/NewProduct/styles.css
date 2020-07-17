@@ -10,16 +10,17 @@
 }
 
 .new-product-container .content{
-  width: 100%;
+  width: calc(100vw - 150px);
   height: 100%;
   max-height: 450px;
-  padding: 5px 100px;
+  padding: 5px 50px;
   background: #f0f0f5;
   box-shadow: 0 0 100px rgba(0,0,0,0.1);
   border-radius: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
 }
 
 .new-product-container .content section {
@@ -28,7 +29,7 @@
 }
 
 .new-product-container .content section h1 {
-  margin: 64px 0 32px;
+  margin: 20px 0;
   font-size: 32px;
 }
 
@@ -49,8 +50,8 @@
 
 .new-product-container .content form {
   width: 100%;
-  max-width: 450px;
-  min-height: 400px;
+  max-width: 460px;
+  min-height: 350px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -73,15 +74,30 @@
   color: #fff
 } 
 
-.new-product-container .content form input,
-.new-product-container .content form textarea {
+.new-product-container .content form .form-field {
+  box-sizing: border-box;
   margin-top: 8px;
-  width: calc(100% - 10px);
-
+  width: calc(100% - 20px);
+}
+textarea{
+  min-width: calc(100% - 40px);
 }
 
-/* .new-product-container .content form textarea{
-  width: 444px;
-  max-height: 100px;
-  padding: 8px;
-} */
+@media (min-width: 992px){
+  .new-product-container .content section h1{
+    margin: 64px 0 32px;
+  }
+
+  .new-product-container .content form{
+    min-height: 400px;
+  }
+
+  .new-product-container .content form .form-field {
+    width: 460px;
+  }
+  .new-product-container .content{
+    flex-direction: row;
+    width: calc(100vw - 100px);
+    padding: 10px 100px;
+  }
+}

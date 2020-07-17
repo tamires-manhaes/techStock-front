@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FiLogIn } from 'react-icons/fi';
 
+import Footer from '../Footer';
 import api from '../../services/api';
 import './styles.css';
 
@@ -14,8 +15,7 @@ export default function Logon(){
     e.preventDefault();
 
     try{
-      const response = await api.post('sessions', { email });
-      console.log(`response: ${response}`);
+      const response = await api.post('sessions', { email, password });
       
       localStorage.setItem('useremail', response.data.email);
       localStorage.setItem('username', response.data.name);
@@ -54,6 +54,8 @@ export default function Logon(){
             </Link>
           </form>
       </section>
+      <Footer />
     </div>
+
   )
 }

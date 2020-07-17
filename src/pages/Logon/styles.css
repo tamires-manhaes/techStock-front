@@ -4,14 +4,13 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 50px;
 }
 
 .logon-container .form {
   max-width: 900px;
   height: 400px;
-  margin: 50px auto;
-  width: 100%;
+  margin: 50px auto 20px;
+  width: calc(100vw - 50px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,4 +63,11 @@
 
 .form form .back-link svg {
   margin-right: 5px;
+}
+
+@media (min-width: 992px){
+  .logon-container .form {
+    width: 100%;
+  }
+
 }

@@ -14,12 +14,18 @@
 }
 
 .header-group a {
-  color: rgb(224, 32, 65);;
+  color: rgb(224, 32, 65);
+  transition: opacity 350ms ease;
+}
+
+.header-group a:hover  {
+  opacity: .6;
 }
 
 .products-container .content{
-  margin: 50px auto;
+  margin: 15px auto;
   box-shadow: 0 0 100px rgba(0,0,0,0.1);
+  width: calc(100% - 50px);
   max-width: 1200px;
   border-radius: 5px;
   padding: 10px;
@@ -33,16 +39,22 @@
 .content .product-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
+  justify-content: center;
+  margin: 20px auto 0;
   padding: 15px;
 }
 
 .content h1 {
   font-size: 2.5rem;
+  margin: 10px 0;
 }
 
 .content .product-list .product-item {
   width: calc((100% / 4) - 40px) ;
+  max-width: 280px;
+  min-width: 280px;
+  height: 400px;
+  box-sizing: border-box;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -50,16 +62,21 @@
   margin: 5px;
   border-radius: 5px;
   background: #fafafa;
-  box-shadow: 0 0 100px rgba(0,0,0,0.1);
+  box-shadow: 0 0 100px rgba(0,0,0,0.2);
+}
+
+.content .product-list .product-item{
+  transition: none 305ms ease;
 }
 
 .content .product-list .product-item button {
   position: absolute;
-  right: 10px;
-  bottom: 10px;
+  right: 15px;
+  bottom: 15px;
 }
 
 .content .product-list .product-item .description-group {
+  color: rgb(83,83,83);
   margin: 5px 0;
 }
 
@@ -76,4 +93,49 @@
   font-size: .9rem;
   margin-bottom: 5px;
 
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.search-item {
+  position: relative;
+  width: calc(100% - 100px);
+  min-width: 280px;
+  margin: 40px auto 10px;
+  background: rgba(224, 32, 65, .7);
+  color: #fff;
+  padding: 15px;
+  box-shadow: 0 0 100px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.search-item button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: #d6d6d6;
+}
+
+.search-box .react-search-field {
+  width: calc(100% - 30px)!important;
+  max-width: 350px!important;
+  box-shadow: 0 0 100px rgba(0,0,0,0.2) !important;
+  border: none !important;
+}
+
+.search-box .react-search-field .react-search-field-input {
+  padding: 0px 15px !important;
+}
+
+.search-item .description-group {
+  margin: 5px 0;
+}
+
+.search-item .description-group strong {
+  margin-right: 5px;
 }
