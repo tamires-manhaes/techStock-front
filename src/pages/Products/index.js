@@ -31,8 +31,9 @@ export default function Products(){
               Authorization: 'admin',
           }
       });
-
-      setProducts(products.filter(product => product.uuid !== uuid))
+      
+      alert("produto deletado com sucesso!");
+      setProducts(products.filter(product => product.uuid !== uuid));
     } catch (erro){
         alert('erro ao deletar o caso, tente novamente.')
     }
