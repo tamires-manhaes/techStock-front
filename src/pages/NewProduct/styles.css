@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .new-product-container .content{
@@ -87,7 +87,7 @@ textarea{
 
 @media (min-width: 992px){
   .new-product-container {
-    flex-direction: row;
+    flex-direction: column;
   }
   
   .new-product-container .content section h1{
